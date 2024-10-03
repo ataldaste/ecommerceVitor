@@ -40,7 +40,7 @@ nav ul li a {
 
 nav ul li a:hover {
     color: #E4002B; 
-    background-color: rgba(255, 255, 255, 0.1); /
+    background-color: rgba(255, 255, 255, 0.1); 
     border-radius: 5px; 
 }
 
@@ -95,7 +95,8 @@ nav ul li a:hover {
 }
 
 .ninguemTorce img {
-    width: 40%;
+    width: 300px;
+    
 }
 
 .ninguemTorce .text {
@@ -116,15 +117,20 @@ nav ul li a:hover {
     display: flex;
     justify-content: space-around;
     padding: 30px;
+    text-decoration: none;
 }
 
 .sections div {
     text-align: center;
+    text-decoration: none;
 }
 
 .sections img {
-    width: 80%;
-}
+    width: 200px;   
+    overflow: hidden; 
+
+  }
+
 
 footer {
     background-color: #111;
