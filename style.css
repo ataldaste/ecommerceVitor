@@ -86,50 +86,180 @@ nav ul li a:hover {
     color: #fff
 }
 
+/* Container principal */
 .ninguemTorce {
+    background-color: #000; /* Fundo preto */
+    color: #fff;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+/* Seção principal de imagem com sobreposição de texto */
+.image-banner {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.image-banner .main-image {
+    width: 100%;
+    object-fit: cover;
+}
+
+.overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    transform: translateY(-50%);
+    color: white;
+    text-align: left;
+    max-width: 40%;
+}
+
+.overlay-text h2 {
+    font-size: 48px; /* Aumentado para seguir o exemplo */
+    font-weight: bold;
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.overlay-text p {
+    font-size: 16px; /* Texto menor */
+    margin-top: 10px;
+    text-transform: uppercase; /* Capitalizado para ficar mais próximo do exemplo */
+    letter-spacing: 1.5px;
+}
+
+/* Seção inferior de conteúdo e texto */
+.sub-section {
     display: flex;
-    justify-content: space-around;
+    flex-direction: row;
+    padding: 40px 20px;
     align-items: center;
-    background-color: #222;
-    padding: 40px;
+    justify-content: space-between;
+    background-color: #000;
+    gap: 20px;
 }
 
-.ninguemTorce img {
-    width: 300px;
-    
+.sub-image img {
+    width: 400px; /* Largura aumentada para refletir o design */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
 }
 
-.ninguemTorce .text {
-    max-width: 50%;
-    padding: 20px;
+.text-content {
+    max-width: 700px;
+    line-height: 1.8; /* Maior espaçamento entre linhas */
+}
+
+.text-content h3 {
+    font-size: 36px; /* Aumentado para seguir o exemplo */
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
+    color: #ff1c1c; /* Cor vermelha de destaque conforme a imagem */
+}
+
+.text-content p {
+    font-size: 18px;
+    margin-bottom: 15px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase; /* Todo o texto capitalizado */
+}
+
+.text-content p:last-of-type {
+    margin-bottom: 40px; /* Maior espaçamento após o último parágrafo */
 }
 
 .cta-button {
-    background-color: #E4002B;
-    padding: 10px 20px;
-    color: white;
+    background-color: #ff1c1c;
+    color: #fff;
+    padding: 15px 30px;
+    font-size: 20px;
+    font-weight: bold;
     border: none;
+    border-radius: 8px;
     cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
     text-transform: uppercase;
+    letter-spacing: 2px;
 }
 
+.cta-button:hover {
+    background-color: #e60000;
+    transform: scale(1.05);
+}
+
+/* Ajuste de responsividade */
+@media (max-width: 768px) {
+    .sub-section {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .sub-image img {
+        width: 100%; /* Imagem ajustada para cobrir toda a tela */
+        margin-bottom: 20px;
+    }
+
+    .text-content {
+        max-width: 100%;
+    }
+
+    .overlay-text h2 {
+        font-size: 28px;
+    }
+
+    .overlay-text p {
+        font-size: 16px;
+    }
+
+    .cta-button {
+        font-size: 16px;
+    }
+}
+
+
+/* Container principal */
 .sections {
     display: flex;
-    justify-content: space-around;
-    padding: 30px;
-    text-decoration: none;
+    justify-content: space-around; /* Distribui os itens igualmente */
+    align-items: center; /* Centraliza verticalmente os itens */
+    padding: 20px;
+    background-color: #000; /* Cor de fundo preta como no exemplo */
 }
 
-.sections div {
-    text-align: center;
-    text-decoration: none;
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none; 
+    color: white; 
+    transition: transform 0.3s ease; 
 }
 
-.sections img {
-    width: 200px;   
-    overflow: hidden; 
+.content:hover {
+    transform: scale(1.05); 
+    color: #E4002B; 
+}
 
-  }
+.content img {
+    width: 200px;
+    height: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.caption {
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+
 
 
 footer {
