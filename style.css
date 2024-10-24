@@ -1,11 +1,13 @@
+/* define o estilo geral da página */
 body {
-    font-family: Arial, sans-serif;
+    font-family: arial, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #000;
     color: #fff;
 }
 
+/* estiliza o cabeçalho com layout flexível */
 header {
     display: flex;
     justify-content: space-between;
@@ -14,10 +16,12 @@ header {
     padding: 10px;
 }
 
+/* ajusta o tamanho do logotipo */
 header img {
     width: 80px;
 }
 
+/* remove marcadores e define espaçamento no menu de navegação */
 nav ul {
     display: flex;
     list-style: none;
@@ -25,10 +29,7 @@ nav ul {
     padding: 10px 0;
 }
 
-nav ul li {
-    display: inline;
-}
-
+/* estiliza os links de navegação */
 nav ul li a {
     color: #fff;
     text-decoration: none;
@@ -37,12 +38,14 @@ nav ul li a {
     transition: background-color 0.3s, color 0.3s;
 }
 
+/* muda a cor dos links ao passar o mouse */
 nav ul li a:hover {
-    color: #E4002B;
+    color: #e4002b;
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 5px;
 }
 
+/* estiliza a barra de pesquisa e o ícone do carrinho */
 .searchBar {
     display: flex;
     align-items: center;
@@ -54,22 +57,25 @@ nav ul li a:hover {
     border-radius: 3px;
 }
 
+/* define o estilo do ícone do carrinho */
 .cart-icon {
     color: #fff;
     font-size: 20px;
     margin-left: 20px;
 }
 
-.mainBanner {
-    text-align: center;
+.mainBanner{
     background-color: #fff;
-    padding: 20px 0;
 }
 
+/* ajusta a imagem principal do banner */
 .mainBanner img {
     width: 70%;
+    display: block;
+    margin: 0 auto;
 }
 
+/* define o layout da seção de detalhes */
 .detalhes {
     display: flex;
     justify-content: center;
@@ -77,10 +83,12 @@ nav ul li a:hover {
     gap: 50px;
 }
 
+/* ajusta a largura da imagem de detalhes */
 .detalhes img {
     width: 80%;
 }
 
+/* estilo para a seção de destaque 'ninguém torce' */
 .ninguemTorce {
     background-color: #000;
     color: #fff;
@@ -89,6 +97,7 @@ nav ul li a:hover {
     padding: 0;
 }
 
+/* define o layout do banner com texto sobreposto */
 .imgBanner {
     position: relative;
     width: 100%;
@@ -99,6 +108,7 @@ nav ul li a:hover {
     object-fit: cover;
 }
 
+/* define a posição do texto sobre a imagem */
 .overTxt {
     position: absolute;
     top: 50%;
@@ -124,6 +134,7 @@ nav ul li a:hover {
     letter-spacing: 1.5px;
 }
 
+/* define o layout da subseção */
 .subSec {
     display: flex;
     padding: 40px 20px;
@@ -133,12 +144,14 @@ nav ul li a:hover {
     gap: 20px;
 }
 
+/* ajusta a imagem da subseção */
 .subImg img {
     width: 400px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
 }
 
+/* define o estilo do texto */
 .txtNgm {
     max-width: 700px;
     line-height: 1.8;
@@ -160,10 +173,7 @@ nav ul li a:hover {
     text-transform: uppercase;
 }
 
-.txtNgm p:last-of-type {
-    margin-bottom: 20px;
-}
-
+/* estiliza o botão */
 .ngmtorceButton {
     background-color: #ff1c1c;
     color: #fff;
@@ -178,11 +188,13 @@ nav ul li a:hover {
     letter-spacing: 2px;
 }
 
+/* aplica efeito ao botão quando o mouse passa por cima */
 .ngmtorceButton:hover {
     background-color: #e60000;
     transform: scale(1.05);
 }
 
+/* define o layout das seções de produtos */
 .sections {
     display: flex;
     justify-content: space-around;
@@ -191,6 +203,7 @@ nav ul li a:hover {
     background-color: #000;
 }
 
+/* define o estilo do conteúdo das seções */
 .content {
     display: flex;
     flex-direction: column;
@@ -200,23 +213,69 @@ nav ul li a:hover {
     transition: transform 0.3s ease;
 }
 
+/* aplica efeito de escala no conteúdo ao passar o mouse */
 .content:hover {
     transform: scale(1.05);
-    color: #E4002B;
+    color: #e4002b;
 }
 
+/* define o estilo das imagens do conteúdo */
 .content img {
     width: 200px;
     height: auto;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
+/* define o estilo das legendas */
 .caption {
     margin-top: 10px;
     font-weight: bold;
     font-size: 16px;
 }
 
+/* nova seção de itens */
+.itens {
+    padding: 14px;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.itens h2 {
+    color: black; /* texto preto para o título */
+    font-size: 36px;
+}
+
+.item-list {
+    display: flex;
+    justify-content: space-around;
+}
+
+.item {
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 3px;
+    width: 10%;
+    color: #000;
+}
+
+.item img {
+    max-width: 100%;
+}
+
+.item button {
+    background-color: red; /* botão vermelho */
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.item button:hover {
+    background-color: darkred; /* tom mais escuro de vermelho no hover */
+}
+
+/* estiliza o rodapé */
 footer {
     background-color: #111;
     text-align: center;
@@ -226,3 +285,4 @@ footer {
 footer img {
     width: 100px;
 }
+
