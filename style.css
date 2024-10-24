@@ -22,7 +22,7 @@ nav ul {
     display: flex;
     list-style: none;
     gap: 20px;
-    padding: 10px 0; 
+    padding: 10px 0;
 }
 
 nav ul li {
@@ -33,24 +33,22 @@ nav ul li a {
     color: #fff;
     text-decoration: none;
     font-weight: bold;
-    padding: 5px; 
-    transition: background-color 0.3s, color 0.3s; 
+    padding: 5px;
+    transition: background-color 0.3s, color 0.3s;
 }
-
 
 nav ul li a:hover {
-    color: #E4002B; 
-    background-color: rgba(255, 255, 255, 0.1); 
-    border-radius: 5px; 
+    color: #E4002B;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
 }
 
-
-.search-bar {
+.searchBar {
     display: flex;
     align-items: center;
 }
 
-.search-bar input {
+.searchBar input {
     padding: 5px;
     border: none;
     border-radius: 3px;
@@ -62,13 +60,13 @@ nav ul li a:hover {
     margin-left: 20px;
 }
 
-.main-banner {
+.mainBanner {
     text-align: center;
     background-color: #fff;
     padding: 20px 0;
 }
 
-.main-banner img {
+.mainBanner img {
     width: 70%;
 }
 
@@ -77,37 +75,31 @@ nav ul li a:hover {
     justify-content: center;
     padding: 10px 0;
     gap: 50px;
-    color: #fff;
 }
-
 
 .detalhes img {
     width: 80%;
-    color: #fff
 }
 
-/* Container principal */
 .ninguemTorce {
-    background-color: #000; /* Fundo preto */
+    background-color: #000;
     color: #fff;
     max-width: 1200px;
     margin: 0 auto;
     padding: 0;
 }
 
-/* Seção principal de imagem com sobreposição de texto */
-.image-banner {
+.imgBanner {
     position: relative;
     width: 100%;
-    height: auto;
 }
 
-.image-banner .main-image {
+.imgBanner .main-image {
     width: 100%;
     object-fit: cover;
 }
 
-.overlay-text {
+.overTxt {
     position: absolute;
     top: 50%;
     left: 5%;
@@ -117,25 +109,23 @@ nav ul li a:hover {
     max-width: 40%;
 }
 
-.overlay-text h2 {
-    font-size: 48px; /* Aumentado para seguir o exemplo */
+.overTxt h2 {
+    font-size: 48px;
     font-weight: bold;
     margin: 0;
     text-transform: uppercase;
     letter-spacing: 2px;
 }
 
-.overlay-text p {
-    font-size: 16px; /* Texto menor */
+.overTxt p {
+    font-size: 16px;
     margin-top: 10px;
-    text-transform: uppercase; /* Capitalizado para ficar mais próximo do exemplo */
+    text-transform: uppercase;
     letter-spacing: 1.5px;
 }
 
-/* Seção inferior de conteúdo e texto */
-.sub-section {
+.subSec {
     display: flex;
-    flex-direction: row;
     padding: 40px 20px;
     align-items: center;
     justify-content: space-between;
@@ -143,38 +133,38 @@ nav ul li a:hover {
     gap: 20px;
 }
 
-.sub-image img {
-    width: 400px; /* Largura aumentada para refletir o design */
+.subImg img {
+    width: 400px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
 }
 
-.text-content {
+.txtNgm {
     max-width: 700px;
-    line-height: 1.8; /* Maior espaçamento entre linhas */
+    line-height: 1.8;
 }
 
-.text-content h3 {
-    font-size: 36px; /* Aumentado para seguir o exemplo */
+.txtNgm h3 {
+    font-size: 36px;
     margin-bottom: 20px;
     text-transform: uppercase;
-    letter-spacing: 2px;
+    letter-spacing: 1.5px;
     font-weight: bold;
-    color: #ff1c1c; /* Cor vermelha de destaque conforme a imagem */
+    color: #ff1c1c;
 }
 
-.text-content p {
+.txtNgm p {
     font-size: 18px;
     margin-bottom: 15px;
-    letter-spacing: 1.5px;
-    text-transform: uppercase; /* Todo o texto capitalizado */
+    letter-spacing: 0.4px;
+    text-transform: uppercase;
 }
 
-.text-content p:last-of-type {
-    margin-bottom: 40px; /* Maior espaçamento após o último parágrafo */
+.txtNgm p:last-of-type {
+    margin-bottom: 20px;
 }
 
-.cta-button {
+.ngmtorceButton {
     background-color: #ff1c1c;
     color: #fff;
     padding: 15px 30px;
@@ -188,63 +178,31 @@ nav ul li a:hover {
     letter-spacing: 2px;
 }
 
-.cta-button:hover {
+.ngmtorceButton:hover {
     background-color: #e60000;
     transform: scale(1.05);
 }
 
-/* Ajuste de responsividade */
-@media (max-width: 768px) {
-    .sub-section {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .sub-image img {
-        width: 100%; /* Imagem ajustada para cobrir toda a tela */
-        margin-bottom: 20px;
-    }
-
-    .text-content {
-        max-width: 100%;
-    }
-
-    .overlay-text h2 {
-        font-size: 28px;
-    }
-
-    .overlay-text p {
-        font-size: 16px;
-    }
-
-    .cta-button {
-        font-size: 16px;
-    }
-}
-
-
-/* Container principal */
 .sections {
     display: flex;
-    justify-content: space-around; /* Distribui os itens igualmente */
-    align-items: center; /* Centraliza verticalmente os itens */
+    justify-content: space-around;
+    align-items: center;
     padding: 20px;
-    background-color: #000; /* Cor de fundo preta como no exemplo */
+    background-color: #000;
 }
-
 
 .content {
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-decoration: none; 
-    color: white; 
-    transition: transform 0.3s ease; 
+    text-decoration: none;
+    color: white;
+    transition: transform 0.3s ease;
 }
 
 .content:hover {
-    transform: scale(1.05); 
-    color: #E4002B; 
+    transform: scale(1.05);
+    color: #E4002B;
 }
 
 .content img {
@@ -258,9 +216,6 @@ nav ul li a:hover {
     font-weight: bold;
     font-size: 16px;
 }
-
-
-
 
 footer {
     background-color: #111;
